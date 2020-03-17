@@ -20,5 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         String sendMessage = getIntent().getStringExtra("message");
 
         Log.d("받아온String", sendMessage);
+
+        binding.messageTxt.setText(sendMessage);
     }
 }
