@@ -18,11 +18,11 @@
             android:text="첫 화면으로 이동"/>
 
         <EditText
-            android:id="@+id/"
+            android:id="@+id/inputEdt"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="두번째 화면에 전할 말을 입력"
+            android:hint="두번째 화면에 전할 말을 입력"/>
 
         <Button
             android:id="@+id/goToSecondBtn"

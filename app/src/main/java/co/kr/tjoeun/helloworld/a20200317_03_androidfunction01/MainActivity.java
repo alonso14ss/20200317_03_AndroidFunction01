@@ -34,7 +34,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 //                세컨드 액티비티로 이동하자!
+//                입력할 메세지를 받아서 세컨드 액티비티에 전달!
+
+                String inputMessage = binding.inputEdt.getText().toString();
+
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+//                inputMessage 변수를 "message"라는 이름표를 붙여서 첨부
+                intent.putExtra("message",inputMessage);
                 startActivity(intent);
 
             }
